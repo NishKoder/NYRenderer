@@ -28,7 +28,6 @@ list_of_files = [
     "pyproject.toml",
     "setup.cfg",
     "tox.ini"
-
 ]
 
 for file_path in list_of_files:
