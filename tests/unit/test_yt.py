@@ -1,5 +1,5 @@
 import pytest
-from NYRenderer import get_time_info
+from NYRenderer.youtube import get_time_info
 from NYRenderer.custom_exception import InvalideURLException
 
 validate_url_data = [
