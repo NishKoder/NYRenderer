@@ -3,6 +3,7 @@ site_name: NYRenderer
 # defeine TOC or order of website-
 nav:
   - Home: index.md
+  - APIReference: ApiReference.md
 
 site_author: Nishant Gupta
 site_description: >-
