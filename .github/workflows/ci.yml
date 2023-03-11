@@ -3,8 +3,13 @@ name: Python application
 on:
   push:
     branches: [ "main" ]
+    paths-ignore:
+        - 'README.md'  
   pull_request:
     branches: [ "main" ]
+    paths-ignore:
+        - 'README.md'  
+
 
 permissions:
   contents: read
@@ -15,12 +20,12 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, window-latest]
+        os: [ubuntu-latest, windows-latest] 
         python-version: ["3.7", "3.8", "3.9"]
-    
+
     steps:
     - uses: actions/checkout@v3
-    - name: Setup python ${{ matrix.python-version }}
+    - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v3
       with:
         python-version: ${{ matrix.python-version }}
